@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // ── Middlewares ──────────────────────────────────────────────────────────────
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://pregao.onrender.com' }));
 app.use(express.json());
 
 // Serve PDFs gerados para download
@@ -29,7 +29,7 @@ app.use((err, _req, res, _next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`✅  Backend rodando em http://localhost:${PORT}`);
+  console.log(`✅  Backend rodando em https://pregao-backend.onrender.com:${PORT}`);
 });
 
 module.exports = app;
