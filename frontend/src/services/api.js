@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Aponta para o endereço do seu backend que ligamos no outro terminal
-const API_URL = 'http://localhost:3001/api';
+const API_URL = 'https://pregao.onrender.com';
 
 export const searchProducts = async (description) => {
   try {
